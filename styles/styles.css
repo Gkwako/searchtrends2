@@ -14,12 +14,9 @@
 
 :root {
     /* color */
-    --color-black: #08060bbb;
-    --color-creme: #F0E7E2;
-    --color-grayish: #aaa;
-    --color-white: #ffffff;
-    --color-lightPink:rgb(179, 116, 116);
-    --color-basic: rgb(56, 40, 40); 
+    --color-blackish: #08060bbb;
+    --color-white: #FFFFFF; 
+    --color-gray:#C4C4C4;
 
     /* fontfamily */
     --h1-fontfamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -34,9 +31,17 @@
 
 /* header  */
 header {
-    background-image: url(../images/cv.jpg);
     display: flex;
     justify-content: center;
+
+    background-image: 
+    linear-gradient( rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5) ), 
+    url(../images/cv.jpg);
+
+    width: 100%;
+    height: auto;
+
     }
 
     /* nav container opmaak */
