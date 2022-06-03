@@ -14,6 +14,7 @@
 
 :root {
     /* color */
+    --color-black: black;
     --color-blackish: #08060bbb;
     --color-white: #FFFFFF; 
     --color-gray:#C4C4C4;
@@ -29,92 +30,189 @@
 /* ************************************ HEADER OPMAAK */
 /* ************************************************** */
 
-/* header  */
+/* header container opmaak */
 header {
-    display: flex;
-    justify-content: center;
-
     background-image: 
     linear-gradient( rgba(0, 0, 0, 0.5), 
     rgba(0, 0, 0, 0.5) ), 
     url(../images/cv.jpg);
 
+    background-color: var(--color-white); /* fallback color */
+    background-repeat: no-repeat;
+
     width: 100%;
-    height: auto;
+}
 
-    }
+ /* side container opmaak */
+ header nav {
+    max-width: 100%;
+    height: 35em;
+    background-color: rgb(255 255 255 / 65%);
+    width: 30em;
+}
 
-    /* nav container opmaak */
-    nav {
-        height: 35em;
-        max-width: 1200px;
+/* nav container opmaak */
+header nav .side-container {
+    position: relative;
+    top: 5em;
+    left: 5em;
+    width: 70%;
+}
 
-       
-    }
+/* logo opmaak in header*/
+header nav h1 {
+    font-family: var(--h1-fontfamily);
+    font-weight: 400;
+    font-size: 1.8em;
+    margin-bottom: .3em;
+    
+    width: 50%;
+}
 
-    /* logo opmaak*/
-    h1 {
-        font-family: var(--h1-fontfamily);
-        font-weight: 400;
-        font-size: 1.2em;
-        color: var(--color-basic);
-    }
+/* tussen tekst opmaak in header*/
+header nav p {
+    font-family: var(--h2-fontfamily);
+    font-weight: 200;
+    font-size: .8em;
+    margin-bottom: 3em;
+}
 
-    /* opmaak navigatie "home, over ons etc" */
-    nav ul {
-        display: flex;
-    }
-        /* stijling van "home, over ons etc" */
-        nav ul li {
-            font-family: var(--h2-fontfamily);
-            list-style: none;
-        }
-            /* link stijling */
-            nav ul li a {
-                text-decoration: none;
-                color: var(--color-black);
-                padding: .6em;
-            }
+/* opmaak navigatie "home, over ons etc" */
+nav ol {
+    list-style: none;
+    font-family: var(--h2-fontfamily);
+}
 
+/* stijling van "home, over ons etc" */
+nav ol li {
+    margin-bottom: 1.5em;
+}
+
+/* link stijling */
+nav ol li a {
+    font-weight: 200;
+    text-decoration: none;
+    color: var(--color-black);
+}
 
 
 
 /* ************************************* UNDERLINE EFFECT:HOVER */
-
 /* hover transition */
-nav ul li a,
-nav ul li a:after {
+nav ol li a,
+nav ol li a:after {
     transition: all .5s;
 }
-    /* hover kleur op tekst */
-    nav ul li a:hover {
-        color: var(--color-lightPink);
-    }
-    /* stroke plaatsing */
-    nav ul li a {
-        position: relative;
-    }
-    /* stroke stijling */
-    nav ul li a:after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 0%;
 
-        content: '.';
-        color: transparent;
-        background: var(--color-lightPink);
-        height: .1em;
-    }
-    /* stoke length */
-    nav ul li a:hover:after {
-        width: 100%;
-    }
+/* hover kleur op tekst */
+nav ol li a:hover {
+    color: rgb(99, 140, 135);
+}
+
+/* stoke length */
+nav ol li a:hover:after {
+    width: 100%;
+}
+
+/* stroke plaatsing */
+nav ol li a {
+    position: relative;
+}
+
+/* stroke stijling */
+nav ol li a:after {
+    position: absolute;
+    top: 1.5em;    /* ruimte tussen stroke en tekst */
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
+    margin: auto;
+    width: 0%;
+
+    content:'';
+    height: .1em;
+    color: transparent;
+    background: rgb(99, 140, 135);
+}
 
 
 
 
-/* ************************************* HAMBURGER MENU OPMAAK */
+/* stroke tussen nav en socials: stijling onder navigatie */
+nav ol :after {
+    position: absolute;
+    top: 23em;    /* ruimte tussen stroke en tekst */
+    left: 0;
+    right: 0;
+   
+    content:'';
+    height: .1em;
+    color: transparent;
+    background: rgb(99, 140, 135);
+}
+
+
+
+
+/* ************************************* SOCIALS */
+.socials ul{
+    height: 0;
+}
+
+/* plaatsing socials */
+.socials ul li{
+    position: relative;
+    left: 10.5em;
+    bottom: 4.5em; 
+    
+    list-style: none;
+    width: 30em; /* with moet uit bij mobiel formaat */
+    width: 50%; /* max width van icon */
+}
+
+/* ruimte tussen icons */
+.socials ul a {
+    margin-left: .5em;
+    width: 20%;
+}
+
+/* icon grote */
+.socials ul img{
+    width: 1.3em;
+}
+
+
+
+
+
+/* ************************************************** */
+/* ************************************ INTRO OPMAAK */
+/* ************************************************** */
+
+/* stijling container "introductie */
+.container-introductie {
+    position: relative;
+    top: -21em;
+    left: 38em;
+    right: 0;
+
+    width: 50%;
+    width: 40em;
+    height: 0;
+    color: white;
+}
+
+.container-introductie h2 {
+    font-family: var(--h1-fontfamily);
+    font-weight: 450;
+}
+
+.container-introductie h3 {
+    font-family: var(--h2-fontfamily);
+    font-weight: 200;
+    font-size: 1em;
+}
+
+
 
