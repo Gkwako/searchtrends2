@@ -158,6 +158,7 @@ nav ol :after {
 /* ************************************* SOCIALS */
 .socials ul{
     height: 0;
+    width: 50%;
 }
 
 /* plaatsing socials */
@@ -167,8 +168,7 @@ nav ol :after {
     bottom: 4.5em; 
     
     list-style: none;
-    width: 30em; /* with moet uit bij mobiel formaat */
-    width: 50%; /* max width van icon */
+
 }
 
 /* ruimte tussen icons */
@@ -193,14 +193,18 @@ nav ol :after {
 /* stijling container "introductie */
 .container-introductie {
     position: relative;
-    top: -21em;
+    top: -22em;
     left: 38em;
     right: 0;
 
-    width: 50%;
-    width: 40em;
+    width: 30%;
+
     height: 0;
     color: white;
+}
+
+.introductie-wrapper{
+    padding: 2em;
 }
 
 .container-introductie h2 {
@@ -212,6 +216,50 @@ nav ol :after {
     font-family: var(--h2-fontfamily);
     font-weight: 200;
     font-size: 1em;
+}
+
+
+
+
+
+/* ************************************************** */
+/* ******************************* OPMAAK "OVER ONS"" */
+/* ************************************************** */
+
+/* opmaak container */
+.container-over {
+    display: flex;
+}
+
+/* plaatsing van inhoud */
+.over-ons {
+    font-size: .9em;
+    width: 66.5%;
+    margin: auto;
+    padding: 7em 0 5em;
+}
+
+/* opmaak h2 */
+.container-over .over-ons h2 {
+    font-size: 2em;
+    font-family: var(--h1-fontfamily);
+    color: var(--color-basic);
+}
+
+/* opmaak h5 */
+.container-over .over-ons h5 {
+    font-size: 1.1em;
+    padding-top: .5em;
+    color: var(--color-lightPink);
+    font-family: var(--h1-fontfamily);
+}
+
+/* opmaak p */
+.over-ons p {
+    padding-top: 1em;
+    width: 50%;
+    font-family: var(--h1-fontfamily);
+    text-align: justify;
 }
 
 
