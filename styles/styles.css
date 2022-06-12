@@ -197,7 +197,7 @@ nav ol :after {
     left: 38em;
     right: 0;
 
-    width: 30%;
+    width: 45%;
 
     height: 0;
     color: white;
@@ -210,12 +210,13 @@ nav ol :after {
 .container-introductie h2 {
     font-family: var(--h1-fontfamily);
     font-weight: 450;
+    font-size: 1.4vw;
 }
 
 .container-introductie h3 {
     font-family: var(--h2-fontfamily);
     font-weight: 200;
-    font-size: 1em;
+    font-size: 1.1vw;;
 }
 
 
@@ -227,16 +228,19 @@ nav ol :after {
 /* ************************************************** */
 
 /* opmaak container */
-.container-over {
+.over-wrapper{
     display: flex;
+    width: 66.5%;
+    margin: auto;
+    padding: 10em 0 10em;
 }
 
 /* plaatsing van inhoud */
 .over-ons {
     font-size: .9em;
     width: 66.5%;
-    margin: auto;
-    padding: 7em 0 5em;
+    
+    margin-right: 5em;
 }
 
 /* opmaak h2 */
@@ -257,10 +261,425 @@ nav ol :after {
 /* opmaak p */
 .over-ons p {
     padding-top: 1em;
-    width: 50%;
     font-family: var(--h1-fontfamily);
     text-align: justify;
+    line-height: 1.6em;
+    font-size: 1.5em;
 }
+
+
+
+
+
+/* ************************************************** */
+/* ************************************ OPMAAK SKILLS */
+/* ************************************************** */
+
+
+/* container opmaak */
+.skills-wrapper {
+    background-color: #858D96;
+
+    box-shadow: -16px 16px 20px 6px #00000045;
+}
+
+
+/* box opmaak van skills */
+.skills .inhoud {
+    padding: 1.5em;
+}
+
+/* grote van icon */
+.inhoud  {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+/* grote van icon */
+.inhoud img {
+    width: 5em;
+}
+
+
+/* h3 opmaak */
+.skills h3 {
+    font-size: 1.3em;
+    color: var(--color-lightPink);
+    font-family: var(--h1-fontfamily);
+}
+
+/* p opmaak */
+.skills p {
+    font-weight: 350;
+    /* font-size: .95vw; */
+    line-height: 1.6em;
+    /* padding: .5em; */
+    font-family: var(--h1-fontfamily);
+}
+
+
+
+
+
+
+/* ************************************************** */
+/* ******************************* OPMAAK " DIENSTEN" */
+/* ************************************************** */
+
+/* container diensten */
+.container-diensten {
+    background: #EFEFEF;
+}
+
+.diensten {
+    width: 66.5%;
+    margin: auto;
+    padding: 10em 0 10em;
+}
+
+/* stijling h5 */
+.container-diensten .diensten h5 {
+    font-size: 2em;
+    padding-bottom: 2em;
+    font-family: var(--h1-fontfamily);
+}
+
+
+
+
+
+/* box waar de diensten in zit */
+.diensten-box {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 5em;
+}
+
+.diensten-container img{
+    width: 100%;
+}
+
+
+
+/* box opmaak en ruimte */
+.diensten-container {
+    width: 100%;
+    border-radius: .5em;
+    background-color:white;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../images/spa2.jpg); */
+    box-shadow: -16px 16px 20px 6px #00000045;
+}
+
+/* h3 opmaak */
+.container-diensten .diensten-container h3 {
+    font-size: 1.3em;
+    padding: 2em 1.5em 0;
+  
+    font-family: var(--h1-fontfamily);
+
+    transition: .4s ease-in-out;
+}
+
+/* stijling p */
+.container-diensten .diensten-container p {
+    font-family: var(--h1-fontfamily);
+    padding: 0.7em 1.7em 3em;
+
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+/* animatie */
+.container-diensten .diensten-container:hover h3 {
+    transition: .4s ease-in-out;
+    color: #dfbeb3;
+}
+
+
+
+
+/* ************************************************** */
+/* ********************************** OPMAAK "SCROLL" */
+/* ************************************************** */
+
+.parallax {
+    background-image: url(../images/cv.jpg);
+    min-height: 30em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* ************************************************** */
+/* ******************************* OPMAAK "SIDE TEXT" */
+/* ************************************************** */
+
+.side-wrapper svg:nth-of-type(2) {
+    position: relative;
+    top: 1em;
+}
+
+/* padding in container*/
+.side-wrapper .wrapper {
+    display: flex;
+    justify-content: center;
+
+    width: 66.5%;
+    margin: auto;
+}
+
+.sideText {
+    display: block;
+    columns: 2;
+    column-gap: 3.5em;
+    column-rule-style: solid;
+    column-rule-width: 4px;
+    column-rule-color: #858D96;
+}
+
+/* h5 opmaak */
+.container-sideText .sideText h5 {
+    padding-bottom: .4em;
+    font-size: 2em;
+    color: var(--color-lightPink);
+    font-family: var(--h1-fontfamily);
+}
+
+/* p opmaak */
+.sideText p {
+    font-family: var(--h1-fontfamily);
+    font-size: .8vw;
+    text-align: justify;
+    line-height: 1.6em;
+}
+
+
+
+
+
+/* ************************************************** */
+/* ******************************* OPMAAK " CAROUSEL" */
+/* ************************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************** */
+/* ******************************* OPMAAK " CONTACT " */
+/* ************************************************** */
+
+.container-max {
+    display: flex;
+    justify-content: center;
+
+    width: 66.5%;
+    margin: auto;
+
+    padding: 10em 0 10em;
+}
+
+/* svg opmaak boven "neem contact" */
+.contact-container .svg-wrapper svg {
+    position: relative;
+    top: -1em;
+}
+
+.contact-us {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+}
+
+/* h2 opmaak */
+.contact-us h2 {
+    font-size: 2.5em;
+    font-family: var(--h1-fontfamily);
+    color: var(--color-lightPink);
+    padding-bottom: .2em;
+}
+
+/* p opmaak */
+.contact-us p {
+    font-family: var(--h2-fontfamily);
+    padding-bottom: 2em;
+    line-height: 1.77em;
+    font-size: 1.2em
+}
+
+/* opmaak tekst */
+.contact-us .column1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* opmaak contact form */
+.contact-us .column2 {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    padding: 2em;
+    border-radius: .5em;
+    box-shadow: -16px 16px 20px 6px #00000045;
+}
+
+/* opmaak grote form */
+.contact-us .column2 form {
+    width: 40%;
+}
+
+
+
+
+/* ************************************* GOOGLE MAP OPMAAK */
+
+.contact-us input,
+.contact-us textarea {
+    background: #fcfcfc;
+}
+
+.contact-us input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #00000045;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-family: var(--h2-fontfamily);
+}
+
+/* Style the submit button with a specific background color etc */
+.contact-us input[type=submit] {
+    background-color: #858D96;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.contact-us input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* google map */
+#map {
+    top: -2em;
+    height: 27em;
+    width: 60%;
+    z-index: 1;
+    border-radius: .4em;
+}
+
+
+
+
+
+/* ************************************************** */
+/* ******************************** OPMAAK " FOOTER " */
+/* ************************************************** */
+
+/* plaatsing container */
+.footer-container {
+    background-color: #00000045;
+}
+
+.footer-wrapper {
+    width: 66.5%;
+    margin: auto;
+    padding: 5em 0 5em;
+}
+
+/* opmaak container */
+.footer-container .row-footer {
+    display: flex;
+    justify-content: center;
+    gap: 8em;
+}
+
+/* info bedrijf, tekst heeft max container */
+.columns-footer p {
+    width: 80%;
+}
+
+/* h3 opmaak */
+.footer-container h3 {
+    font-family: var(--h1-fontfamily);
+    color: var(--color-basic);
+
+    margin-bottom: .8em;
+    font-weight: 520;
+    font-size: 1em;
+}
+
+/* tekst stijling */
+.footer-container p {
+    font-weight: 200;
+    font-family: var(--h2-fontfamily);
+    line-height: 1.6em;
+}
+
+/* nav in footer tekst stijling */
+.footer-container ul {
+    list-style: none;
+    line-height: 1.6;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+/* navigatie in footer */
+.footer-container ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.6;
+    font-family: var(--h2-fontfamily);
+}
+
+.footer-container ul a:hover {
+    opacity: 0.8;
+}
+
+.footer-container .copyright {
+    display: grid;
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.footer-social img {
+    width: 1.2em;
+}
+
+.footer-social {
+    width: 0%;
+}
+
+
+
+
+
+
 
 
 
