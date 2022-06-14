@@ -21,7 +21,10 @@ function toggleMenu() {
 		console.log(" open ");
 	}
 }
-hamburger.addEventListener("click", toggleMenu);
+if (hamburger) {
+	hamburger.addEventListener("click", toggleMenu);
+}
+
 
 
 

@@ -32,6 +32,11 @@
 
 /* header container opmaak */
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row-reverse; */
+
     background-image: 
     linear-gradient( rgba(0, 0, 0, 0.5), 
     rgba(0, 0, 0, 0.5) ), 
@@ -39,31 +44,27 @@ header {
 
     background-color: var(--color-white); /* fallback color */
     background-repeat: no-repeat;
-
-    width: 100%;
+    background-size: cover;
 }
 
  /* side container opmaak */
  header nav {
-    max-width: 100%;
     height: 35em;
     background-color: rgb(255 255 255 / 65%);
     width: 30em;
+    margin: auto;
 }
 
 /* nav container opmaak */
 header nav .side-container {
-    position: relative;
-    top: 5em;
-    left: 5em;
-    width: 70%;
+    padding: 5em;
 }
 
 /* logo opmaak in header*/
 header nav h1 {
     font-family: var(--h1-fontfamily);
     font-weight: 400;
-    font-size: 1.8em;
+    font-size: 2rem;
     margin-bottom: .3em;
     
     width: 50%;
@@ -73,7 +74,7 @@ header nav h1 {
 header nav p {
     font-family: var(--h2-fontfamily);
     font-weight: 200;
-    font-size: .8em;
+    font-size: .8rem;
     margin-bottom: 3em;
 }
 
@@ -140,45 +141,42 @@ nav ol li a:after {
 
 
 /* stroke tussen nav en socials: stijling onder navigatie */
-nav ol :after {
+nav ul :after {
     position: absolute;
-    top: 23em;    /* ruimte tussen stroke en tekst */
-    left: 0;
+    bottom: 5em; /* ruimte tussen stroke en tekst */
+    left: 5em;
     right: 0;
    
     content:'';
     height: .1em;
     color: transparent;
     background: rgb(99, 140, 135);
+
+    width: 20em;
 }
 
+header ul {
+    display: flex;
+    justify-content: center;
 
-
-
-/* ************************************* SOCIALS */
-.socials ul{
-    height: 0;
-    width: 50%;
-}
-
-/* plaatsing socials */
-.socials ul li{
     position: relative;
-    left: 10.5em;
-    bottom: 4.5em; 
-    
-    list-style: none;
-
+    top: -1em;
 }
+
 
 /* ruimte tussen icons */
-.socials ul a {
+header ul a {
     margin-left: .5em;
     width: 20%;
 }
 
 /* icon grote */
-.socials ul img{
+header ul li {
+    list-style: none;
+}
+
+/* icon grote */
+header ul li a img{
     width: 1.3em;
 }
 
@@ -191,32 +189,22 @@ nav ol :after {
 /* ************************************************** */
 
 /* stijling container "introductie */
-.container-introductie {
-    position: relative;
-    top: -22em;
-    left: 38em;
-    right: 0;
-
-    width: 45%;
-
-    height: 0;
+.introductie-tekst{
     color: white;
-}
-
-.introductie-wrapper{
-    padding: 2em;
+    width: 58%;
+    margin: auto;
 }
 
 .container-introductie h2 {
     font-family: var(--h1-fontfamily);
     font-weight: 450;
-    font-size: 1.4vw;
+    font-size: 1.8rem;
 }
 
 .container-introductie h3 {
     font-family: var(--h2-fontfamily);
     font-weight: 200;
-    font-size: 1.1vw;;
+    font-size: 1rem;;
 }
 
 
@@ -230,29 +218,26 @@ nav ol :after {
 /* opmaak container */
 .over-wrapper{
     display: flex;
-    width: 66.5%;
-    margin: auto;
-    padding: 10em 0 10em;
 }
 
-/* plaatsing van inhoud */
+/* ruimte tussen kwaliteiten en tekst */
 .over-ons {
-    font-size: .9em;
     width: 66.5%;
-    
-    margin-right: 5em;
+    margin: auto;
+   
+    padding: 10em 5em 10em;
 }
 
 /* opmaak h2 */
 .container-over .over-ons h2 {
-    font-size: 2em;
+    font-size: 2rem;
     font-family: var(--h1-fontfamily);
     color: var(--color-basic);
 }
 
 /* opmaak h5 */
 .container-over .over-ons h5 {
-    font-size: 1.1em;
+    font-size: 1.5rem;
     padding-top: .5em;
     color: var(--color-lightPink);
     font-family: var(--h1-fontfamily);
@@ -264,7 +249,7 @@ nav ol :after {
     font-family: var(--h1-fontfamily);
     text-align: justify;
     line-height: 1.6em;
-    font-size: 1.5em;
+    font-size: 1.4rem;
 }
 
 
@@ -275,47 +260,52 @@ nav ol :after {
 /* ************************************ OPMAAK SKILLS */
 /* ************************************************** */
 
+.skills-wrapper{
+    margin: 10em 0 10em;
+    background-color: rebeccapurple;
+}
 
 /* container opmaak */
-.skills-wrapper {
+.skills {
+    padding: 4em;
     background-color: #858D96;
-
     box-shadow: -16px 16px 20px 6px #00000045;
 }
 
-
-/* box opmaak van skills */
-.skills .inhoud {
-    padding: 1.5em;
-}
-
 /* grote van icon */
-.inhoud  {
+.inhoud {
     display: flex;
     align-items: center;
-    gap: 1.5em;
+    gap: 4em;
+    padding: 1em;
+}
+
+.inhoud .groep{
+    text-align: center;
 }
 
 /* grote van icon */
 .inhoud img {
-    width: 5em;
+    width: 6rem;
 }
 
 
 /* h3 opmaak */
 .skills h3 {
-    font-size: 1.3em;
-    color: var(--color-lightPink);
+    font-size: 1.5rem;
+    color: var(--color-white);
     font-family: var(--h1-fontfamily);
 }
 
 /* p opmaak */
 .skills p {
     font-weight: 350;
-    /* font-size: .95vw; */
+    font-size: 1.2rem;
     line-height: 1.6em;
-    /* padding: .5em; */
+    color: var(--color-white);
     font-family: var(--h1-fontfamily);
+
+    width: 25em;
 }
 
 
