@@ -57,12 +57,12 @@ $(".carousel").owlCarousel({
 // GOOGLE MAPS -----
 console.log(" map ");
 
-var map = L.map('map').setView([52.468040, 4.834620], 13);
+var map = L.map('map').setView([52.473290, 4.827750], 13);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-L.marker([52.468040, 4.834620]).addTo(map)
-	.bindPopup('BeautyFit Zaandam')
+L.marker([52.473290, 4.827750]).addTo(map)
+	.bindPopup('P. Jonker Electrotechniek')
 	.openPopup();

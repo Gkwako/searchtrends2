@@ -301,7 +301,7 @@ header ul li a img{
 .skills p {
     font-weight: 350;
     font-size: 1.2rem;
-    line-height: 1.6em;
+    line-height: 1.7em;
     color: var(--color-white);
     font-family: var(--h1-fontfamily);
 
@@ -330,61 +330,53 @@ header ul li a img{
 
 /* stijling h5 */
 .container-diensten .diensten h5 {
-    font-size: 2em;
+    font-size: 2rem;
     padding-bottom: 2em;
     font-family: var(--h1-fontfamily);
 }
 
 
-
-
-
 /* box waar de diensten in zit */
 .diensten-box {
     display: flex;
-    /* justify-content: space-between; */
-    gap: 5em;
+    gap: 3.5em;
 }
 
 .diensten-container img{
     width: 100%;
 }
 
-
-
 /* box opmaak en ruimte */
 .diensten-container {
-    width: 100%;
-    border-radius: .5em;
     background-color:white;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../images/spa2.jpg); */
     box-shadow: -16px 16px 20px 6px #00000045;
 }
 
 /* h3 opmaak */
 .container-diensten .diensten-container h3 {
-    font-size: 1.3em;
-    padding: 2em 1.5em 0;
-  
-    font-family: var(--h1-fontfamily);
+    font-size: 1.2rem;
+    padding: 2em 1.3em 0;
 
+    font-family: var(--h1-fontfamily);
     transition: .4s ease-in-out;
+}
+
+/* animatie */
+.container-diensten .diensten-container:hover h3 {
+    transition: .4s ease-in-out;
+    color: #70a19b;
 }
 
 /* stijling p */
 .container-diensten .diensten-container p {
     font-family: var(--h1-fontfamily);
     padding: 0.7em 1.7em 3em;
-
-    font-size: 1.2em;
-    line-height: 1.6em;
+    font-size: 1rem;
+    line-height: 1.8em;
 }
 
-/* animatie */
-.container-diensten .diensten-container:hover h3 {
-    transition: .4s ease-in-out;
-    color: #dfbeb3;
-}
+
+
 
 
 
@@ -404,20 +396,14 @@ header ul li a img{
 
 
 
+
+
 /* ************************************************** */
 /* ******************************* OPMAAK "SIDE TEXT" */
 /* ************************************************** */
 
-.side-wrapper svg:nth-of-type(2) {
-    position: relative;
-    top: 1em;
-}
-
 /* padding in container*/
 .side-wrapper .wrapper {
-    display: flex;
-    justify-content: center;
-
     width: 66.5%;
     margin: auto;
 }
@@ -428,25 +414,24 @@ header ul li a img{
     column-gap: 3.5em;
     column-rule-style: solid;
     column-rule-width: 4px;
-    column-rule-color: #858D96;
+    column-rule-color: #70a19b;
 }
 
 /* h5 opmaak */
 .container-sideText .sideText h5 {
-    padding-bottom: .4em;
-    font-size: 2em;
-    color: var(--color-lightPink);
+    padding-bottom: .5em;
+    font-size: 1.7rem;
     font-family: var(--h1-fontfamily);
 }
 
 /* p opmaak */
 .sideText p {
+    align-items: center;
     font-family: var(--h1-fontfamily);
-    font-size: .8vw;
+    font-size: 1rem;
     text-align: justify;
-    line-height: 1.6em;
+    line-height: 1.8em;
 }
-
 
 
 
@@ -455,13 +440,24 @@ header ul li a img{
 /* ******************************* OPMAAK " CAROUSEL" */
 /* ************************************************** */
 
+/* comtainer opmaak */
+.carousel-container {
+    position: relative;
+    top: -3em; 
 
+    padding: 0 20%;
+    background-color: #EFEFEF;
+}
 
+/* opmaak card */
+.carousel .card {
+    padding: 3em;
+}
 
-
-
-
-
+.parallax svg{
+    position: relative;
+    top: -4em;
+}
 
 
 
@@ -481,12 +477,6 @@ header ul li a img{
     padding: 10em 0 10em;
 }
 
-/* svg opmaak boven "neem contact" */
-.contact-container .svg-wrapper svg {
-    position: relative;
-    top: -1em;
-}
-
 .contact-us {
     display: grid;
     justify-content: center;
@@ -496,26 +486,19 @@ header ul li a img{
 
 /* h2 opmaak */
 .contact-us h2 {
-    font-size: 2.5em;
+    font-size: 1.7rem;
     font-family: var(--h1-fontfamily);
-    color: var(--color-lightPink);
-    padding-bottom: .2em;
+    padding-bottom: .5em;
 }
 
 /* p opmaak */
 .contact-us p {
+    font-size: 1rem;
     font-family: var(--h2-fontfamily);
+    line-height: 1.8em;
     padding-bottom: 2em;
-    line-height: 1.77em;
-    font-size: 1.2em
-}
-
-/* opmaak tekst */
-.contact-us .column1 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+    
+    width: 100%;
 }
 
 /* opmaak contact form */
@@ -524,7 +507,6 @@ header ul li a img{
     align-items: center;
     gap: 4em;
     padding: 2em;
-    border-radius: .5em;
     box-shadow: -16px 16px 20px 6px #00000045;
 }
 
@@ -558,7 +540,7 @@ textarea {
 
 /* Style the submit button with a specific background color etc */
 .contact-us input[type=submit] {
-    background-color: #858D96;
+    background-color: #638c87;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -568,7 +550,7 @@ textarea {
 
 /* When moving the mouse over the submit button, add a darker green color */
 .contact-us input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #70a19b;
 }
 
 /* google map */
@@ -596,14 +578,14 @@ textarea {
 .footer-wrapper {
     width: 66.5%;
     margin: auto;
-    padding: 5em 0 5em;
+    padding: 3em 0 2em;
 }
 
 /* opmaak container */
 .footer-container .row-footer {
     display: flex;
     justify-content: center;
-    gap: 8em;
+    gap: 7em;
 }
 
 /* info bedrijf, tekst heeft max container */
@@ -614,11 +596,9 @@ textarea {
 /* h3 opmaak */
 .footer-container h3 {
     font-family: var(--h1-fontfamily);
-    color: var(--color-basic);
-
     margin-bottom: .8em;
     font-weight: 520;
-    font-size: 1em;
+    font-size: .9rem;
 }
 
 /* tekst stijling */
@@ -626,18 +606,19 @@ textarea {
     font-weight: 200;
     font-family: var(--h2-fontfamily);
     line-height: 1.6em;
+    font-size: .9rem;
+    opacity: 0.6;
 }
 
 /* nav in footer tekst stijling */
 .footer-container ul {
     list-style: none;
     line-height: 1.6;
-    font-size: 1em;
-    margin-bottom: 1em;
+    font-size: .8rem;
 }
 
 /* navigatie in footer */
-.footer-container ul a {
+.footer-container a {
     color: inherit;
     text-decoration: none;
     opacity: 0.6;
@@ -650,15 +631,14 @@ textarea {
 
 .footer-container .copyright {
     display: grid;
-    text-align: center;
     padding-top: 24px;
     opacity: 0.3;
     font-size: 13px;
-    margin-bottom: 0;
 }
 
-.footer-social img {
+.footer-social a svg {
     width: 1.2em;
+    color: rgba(0, 0, 0, 0.802);
 }
 
 .footer-social {
@@ -668,8 +648,117 @@ textarea {
 
 
 
+/* ************************************* MEDIA */
+
+@media screen and (max-width:1300px) {
+
+    /* carousel _________________________________ */
+    .carousel .card {
+        padding: 0em;
+    }
+    /* comtainer opmaak */
+    .carousel-container {
+        top: -1em; 
+    }
+    .parallax svg{
+        position: relative;
+        top: -1em;
+    }
 
 
 
+    /* diensten _________________________________ */
+    .diensten-box {
+        display: block;
+    }
+    .diensten-wrapper {
+        margin-bottom: 5em;
+    }
+
+
+
+    /* google map _________________________________ */
+    #map {
+        display: none;
+    }
+    /* grote in vul veld */
+    .contact-us .column2 form {
+        width: 100%;
+    }
+
+    
+    /* footer _________________________________ */
+    .footer-container .row-footer {
+        gap: 2em;
+    }
+    /* opmaak container */
+    .footer-container .row-footer {
+        display: grid;
+        text-align: center;
+    }
+    .footer-container .copyright {
+        text-align: center;
+    }
+    .columns-footer p {
+        width: 70%;
+        margin: auto;
+    }
+    .footer-social {
+        width: 100%;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:817px){
+
+    /* intro tekst _________________________________ */
+    .introductie-tekst {
+        display: none;
+    }
+
+    /* over ons _________________________________ */
+    .over-wrapper {
+        display: block;
+    }
+    
+    .over-ons {
+        padding: 10em 0 0;
+    }
+
+    
+    /* skills _________________________________ */
+    .skills-wrapper {
+        margin: 10em 0 0em;
+    }
+
+    .skills p {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    .inhoud {
+        display: block;   
+        padding: 1em;
+    }
+
+    .inhoud:nth-of-type(2) {
+        display: flex;   
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+
+
+    /* tussen tekst _________________________________ */
+    .sideText {
+        columns: 1;
+    }
+
+
+
+}
 
 
