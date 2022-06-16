@@ -760,6 +760,12 @@ textarea {
         columns: 1;
     }
 
+    /* parallax _________________________________ */
+    /* background image scrolt niet op mobiel */
+    .parallax {
+        background-attachment: local, scroll;
+    }
+
 }
 
 
@@ -771,12 +777,39 @@ textarea {
     
     /* side container opmaak */
     header nav {
-        height: 34em;
+        height: 33em;
 
     }
 
     nav ul :after {
+        bottom: 4em;
         left: 3em;
         content: '';
+    }
+    .over-ons {
+        padding: 7em 0 0;
+    }
+
+    .over-ons p {
+        font-size: 1rem;
+    }
+
+     /* skills _________________________________ */
+    .skills p {
+        font-size: 1rem;
+    }
+
+    .skills-wrapper {
+        margin: 7em 0 0em;
+    }
+
+
+    .container-max {
+        text-align: justify;
+        padding: 7em 0 7em;
+    }
+
+    .diensten {
+        padding: 7em 0 5em;
     }
 }
