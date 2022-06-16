@@ -53,7 +53,6 @@ header {
     height: 35em;
     background-color: rgb(255 255 255 / 65%);
     width: 30em;
-    margin: auto;
 }
 
 /* nav container opmaak */
@@ -65,7 +64,7 @@ header nav .side-container {
 header nav h1 {
     font-family: var(--h1-fontfamily);
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: .3em;
     
     width: 50%;
@@ -192,14 +191,15 @@ header ul li a img{
 /* stijling container "introductie */
 .introductie-tekst{
     color: white;
-    width: 58%;
+    width: 56%;
     margin: auto;
+    
 }
 
 .container-introductie h2 {
     font-family: var(--h1-fontfamily);
     font-weight: 450;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 
 .container-introductie h3 {
@@ -216,31 +216,44 @@ header ul li a img{
 /* ******************************* OPMAAK "OVER ONS"" */
 /* ************************************************** */
 
+/* stroke stijling */
+.stroke {
+    border-left: 7px solid #638c87;
+    height: 25em;
+    position: relative;
+    left: 10em;
+    top: 9em;
+}
+
+.container-over .child:nth-of-type(1){
+    border: #FFFFFF;
+    margin: 14em 0 10em;
+}
+
 /* opmaak container */
 .over-wrapper{
     display: flex;
+    justify-content: center;
 }
 
 /* ruimte tussen kwaliteiten en tekst */
 .over-ons {
-    width: 66.5%;
+    width: 33%;
     margin: auto;
-   
-    padding: 10em 5em 10em;
+    max-width: 1170px;
 }
 
 /* opmaak h2 */
 .container-over .over-ons h2 {
     font-size: 2rem;
     font-family: var(--h1-fontfamily);
-    color: var(--color-basic);
 }
 
 /* opmaak h5 */
 .container-over .over-ons h5 {
     font-size: 1.5rem;
     padding-top: .5em;
-    color: var(--color-lightPink);
+    color: #638c87;
     font-family: var(--h1-fontfamily);
 }
 
@@ -250,7 +263,8 @@ header ul li a img{
     font-family: var(--h1-fontfamily);
     text-align: justify;
     line-height: 1.6em;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    width: 150%;
 }
 
 
@@ -261,39 +275,47 @@ header ul li a img{
 /* ************************************ OPMAAK SKILLS */
 /* ************************************************** */
 
-.skills-wrapper{
-    margin: 10em 0 10em;
-    background-color: rebeccapurple;
+.container-over .child:nth-of-type(2){
+    border: #FFFFFF;
+    margin: 5em 0 5em;
 }
 
 /* container opmaak */
 .skills {
-    padding: 4em;
+    padding: 4em 4em 2em;
     background-color: #858D96;
     box-shadow: -16px 16px 20px 6px #00000045;
 }
 
-/* grote van icon */
 .inhoud {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 4em;
-    padding: 1em;
+    gap: 2em;
+    padding-bottom: 3rem;
+}
+
+.inhoud:nth-of-type(2) {
+    display: flex;
+    gap: 1em;
 }
 
 .inhoud .groep{
     text-align: center;
 }
 
-/* grote van icon */
-.inhoud img {
+/* grote van svg */
+.inhoud svg {
     width: 6rem;
 }
 
+.inhoud .groep svg {
+    color: #EFEFEF;
+}
 
 /* h3 opmaak */
 .skills h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--color-white);
     font-family: var(--h1-fontfamily);
 }
@@ -301,12 +323,12 @@ header ul li a img{
 /* p opmaak */
 .skills p {
     font-weight: 350;
-    font-size: 1.2rem;
-    line-height: 1.7em;
+    font-size: 1rem;
+    line-height: 1.4em;
     color: var(--color-white);
     font-family: var(--h1-fontfamily);
-
-    width: 25em;
+ 
+    width: 14em;
 }
 
 
@@ -323,10 +345,12 @@ header ul li a img{
     background: #EFEFEF;
 }
 
-.diensten {
-    width: 66.5%;
-    margin: auto;
+.diensten {    
+    width: 58.5%;
     padding: 10em 0 10em;
+
+    margin: auto;
+    max-width: 1170px;
 }
 
 /* stijling h5 */
@@ -335,7 +359,6 @@ header ul li a img{
     padding-bottom: 2em;
     font-family: var(--h1-fontfamily);
 }
-
 
 /* box waar de diensten in zit */
 .diensten-box {
@@ -405,8 +428,9 @@ header ul li a img{
 
 /* padding in container*/
 .side-wrapper .wrapper {
-    width: 66.5%;
+    width: 50.5%;
     margin: auto;
+    max-width: 1170px;
 }
 
 .sideText {
@@ -452,7 +476,7 @@ header ul li a img{
 
 /* opmaak card */
 .carousel .card {
-    padding: 3em;
+    padding: 4em;
 }
 
 .parallax svg{
@@ -472,10 +496,12 @@ header ul li a img{
     display: flex;
     justify-content: center;
 
-    width: 66.5%;
+    width: 50.5%;
     margin: auto;
 
     padding: 10em 0 10em;
+    max-width: 1170px;
+
 }
 
 .contact-us {
@@ -580,7 +606,7 @@ textarea {
     display: grid;
     justify-content: center; 
 
-    width: 66.5%;
+    width: 60.5%;
     margin: auto;
     padding: 3em 0 2em;
 }
@@ -669,6 +695,53 @@ textarea {
     }
 
 
+    /* over ons _________________________________ */
+    .over-wrapper {
+        display: block;
+    }
+    .over-ons {
+        width: 60%;
+        padding: 10em 0em 0em;
+    }
+    .over-ons p {
+        width: 100%;
+    }
+    .container-over .child:nth-of-type(2) {
+        margin:0 ;
+    }
+    .container-over .child:nth-of-type(1) {
+        margin:0 ;
+    }
+    /* stroke naast tekst "over ons" */
+    .stroke{
+        height: 0;
+    }
+
+
+
+    /* skills _________________________________ */
+    .skills-wrapper {
+        margin: 10em 0 0em;
+    }
+    .skills {
+        padding: 4em 4em 4em;
+    }
+    .skills p {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    .inhoud {
+        display: block;   
+        padding: 1.5em 15em;
+    }
+    .inhoud:nth-of-type(2) {
+        display: flex;   
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+
 
     /* diensten _________________________________ */
     .diensten-box {
@@ -690,6 +763,7 @@ textarea {
     }
 
     
+
     /* footer _________________________________ */
     .footer-container .row-footer {
         gap: 2em;
@@ -711,7 +785,6 @@ textarea {
     }
 
 
-
 }
 
 
@@ -722,43 +795,29 @@ textarea {
         display: none;
     }
 
+
+
     /* over ons _________________________________ */
-    .over-wrapper {
-        display: block;
-    }
-    
     .over-ons {
+        width: 70%;
         padding: 10em 0 0;
     }
 
     
-    /* skills _________________________________ */
-    .skills-wrapper {
-        margin: 10em 0 0em;
-    }
 
-    .skills p {
-        text-align: center;
-        margin: auto;
-        width: 100%;
-    }
+    /* skills _________________________________ */
     .inhoud {
-        display: block;   
         padding: 1em;
     }
 
-    .inhoud:nth-of-type(2) {
-        display: flex;   
-        flex-direction: column-reverse;
-        gap: 0;
-    }
-
-
+   
 
     /* tussen tekst _________________________________ */
     .sideText {
         columns: 1;
     }
+
+
 
     /* parallax _________________________________ */
     /* background image scrolt niet op mobiel */
@@ -769,47 +828,59 @@ textarea {
 }
 
 
+
+
 @media screen and (max-width:460px) {
 
+    /* header _________________________________ */
     header nav .side-container {
         padding: 7em 3em;
     }
-    
     /* side container opmaak */
     header nav {
         height: 40em;
 
     }
-
     nav ul :after {
         bottom: 4em;
         left: 3em;
         content: '';
     }
+
+
+
+    /* over ons _________________________________ */
     .over-ons {
         padding: 7em 0 0;
     }
-
     .over-ons p {
         font-size: 1rem;
     }
 
-     /* skills _________________________________ */
+
+    /* skills _________________________________ */
     .skills p {
         font-size: 1rem;
     }
-
     .skills-wrapper {
         margin: 7em 0 0em;
     }
 
 
+
+    /* contact _________________________________ */
     .container-max {
         text-align: justify;
         padding: 7em 0 7em;
+        width: 75.5%;
     }
 
+
+
+    /* diensten _________________________________ */
     .diensten {
         padding: 7em 0 5em;
     }
+
+
 }

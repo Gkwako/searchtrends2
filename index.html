@@ -14,7 +14,7 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
@@ -28,57 +28,63 @@
 
 <body>
     <header>
-            <nav>
-                <div class="side-container">
-                    <h1>P. Jonker ELECTROTECHNIEK</h1>
-                    
-                        <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nemo quidem provident, repellat
-                            minus nesciunt pariatur! Saepe sint, aperiam repellat fugiat, .
-                        </P>
-              
-                    <ol id="menu" class="menu">
-                        <li><a class="menuItem" href="#home"> Home </a></li>
-                        <li><a class="menuItem" href="#over-ons"> Over ons </a></li>
-                        <li><a class="menuItem" href="#diensten"> Diensten </a></li>
-                        <li><a class="menuItem" href="#contact"> Contact </a></li>
-                    </ol>
+        <nav>
+            <div class="side-container">
+                <h1>P. Jonker ELECTROTECHNIEK</h1>
+
+                <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nemo quidem provident, repellat
+                    minus nesciunt pariatur! Saepe sint, aperiam repellat fugiat, .
+                </P>
+
+                <ol id="menu" class="menu">
+                    <li><a class="menuItem" href="#home"> Home </a></li>
+                    <li><a class="menuItem" href="#over-ons"> Over ons </a></li>
+                    <li><a class="menuItem" href="#diensten"> Diensten </a></li>
+                    <li><a class="menuItem" href="#contact"> Contact </a></li>
+                </ol>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#"><img src="images/facebook.png" alt="img van facebook"></a>
+                    <a href="#"><img src="images/linkedin.png" alt="img van linkedin"></a>
+                    <a href="#"><img src="images/insta.png" alt="img van instagram"></a>
+                    <a href="#"><img src="images/twitter.png" alt="img van twitter"></a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <section id="introductie" class="container-introductie">
+            <div class="introductie-wrapper">
+                <div class="introductie">
+                    <div class="introductie-tekst">
+                        <h2>Elektrische installaties</h2>
+                        <h3>De solide basis voor uw bedrijf of woning; een compleet ingerichte, goed onderhouden
+                            elektrische installatie.
+                            P jonker electrotechniek is er in elke stap van het proces
+                        </h3>
+                    </div>
                 </div>
-
-                <ul>
-                    <li>
-                        <a href="#"><img src="images/facebook.png" alt="img van facebook"></a>
-                        <a href="#"><img src="images/linkedin.png" alt="img van linkedin"></a>
-                        <a href="#"><img src="images/insta.png" alt="img van instagram"></a>
-                        <a href="#"><img src="images/twitter.png" alt="img van twitter"></a>
-                    </li>
-                </ul>
-
-            </nav>
-
-            <section id="introductie" class="container-introductie">
-                <div class="introductie-wrapper"> 
-                    <div class="introductie">
-                        <div class="introductie-tekst">
-                            <h2>Elektrische installaties</h2>
-                            <h3>De solide basis voor uw bedrijf of woning; een compleet ingerichte, goed onderhouden elektrische installatie. 
-                                P jonker electrotechniek is er in elke stap van het proces
-                            </h3>
-                        </div>
-                    </div> 
-                </div> 
-            </section> 
+            </div>
+        </section>
     </header>
 
     <main>
         <div id="content-container" class="content-container">
 
+
+
             <section id="over-ons" class="container-over">
-                
-                <div class="over-wrapper">               
-                    
-                    <div class="over-ons">
-                        <h2>Over ons</h2>
-                        <h5> Lorem ipsum dolor sit amet elite</h5>                    
+
+                <div class="over-wrapper">
+
+                    <div class="stroke"></div>
+
+                    <fieldset class="child">
+                        <div class="over-ons">
+                            <h2>Over ons</h2>
+                            <h5> Lorem ipsum dolor sit amet elite</h5>
 
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam porro unde velit iste.
@@ -92,95 +98,166 @@
                                 quidem, ea
                                 quae!
                             </p>
-                    </div>
+                        </div>
+                    </fieldset>
 
-                    <div class="skills-wrapper">    
+                    <fieldset class="child">
+                        <div class="skills-wrapper">
 
-                        <div class="skills">
+                            <div class="skills">
 
-                            <div class="inhoud">
-                     
-                                <div class="groep">
-                                    <img src="images/tijd.png" alt="tijd">
-                                    <h3>Lorem ipsum dolor</h3>
+                                <div class="inhoud">
+
+                                    <div class="groep">
+                                        <!-- <svg class="w-64 h-64" width="65" height="65" viewBox="0 0 1024 1024"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M945 412H689c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h256c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM811 548H689c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h122c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM477.3 322.5H434c-6.2 0-11.2 5-11.2 11.2v248c0 3.6 1.7 6.9 4.6 9l148.9 108.6c5 3.6 12 2.6 15.6-2.4l25.7-35.1v-0.1c3.6-5 2.5-12-2.5-15.6l-126.7-91.6V333.7c0.1-6.2-5-11.2-11.1-11.2z"
+                                                fill="currentColor"></path>
+                                            <path
+                                                d="M804.8 673.9H747c-5.6 0-10.9 2.9-13.9 7.7-12.7 20.1-27.5 38.7-44.5 55.7-29.3 29.3-63.4 52.3-101.3 68.3-39.3 16.6-81 25-124 25-43.1 0-84.8-8.4-124-25-37.9-16-72-39-101.3-68.3s-52.3-63.4-68.3-101.3c-16.6-39.2-25-80.9-25-124 0-43.1 8.4-84.7 25-124 16-37.9 39-72 68.3-101.3 29.3-29.3 63.4-52.3 101.3-68.3 39.2-16.6 81-25 124-25 43.1 0 84.8 8.4 124 25 37.9 16 72 39 101.3 68.3 17 17 31.8 35.6 44.5 55.7 3 4.8 8.3 7.7 13.9 7.7h57.8c6.9 0 11.3-7.2 8.2-13.3-65.2-129.7-197.4-214-345-215.7-216.1-2.7-395.6 174.2-396 390.1C71.6 727.5 246.9 903 463.2 903c149.5 0 283.9-84.6 349.8-215.8 3.1-6.1-1.4-13.3-8.2-13.3z"
+                                                p-id="12358"></path>
+                                        </svg> -->
+
+                                        <svg class="w-64 h-64" width="65" height="65" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                            <path
+                                                d="M12 8.25c-1.79 0-3.25 1.46-3.25 3.25s1.46 3.25 3.25 3.25 3.25-1.46 3.25-3.25S13.79 8.25 12 8.25zm1 2.93c0 .61-.33 1.19-.85 1.5l-.77.46c-.12.07-.25.11-.39.11-.25 0-.5-.13-.64-.36-.21-.36-.1-.82.26-1.03l.76-.46c.08-.05.12-.13.12-.21v-.93a.755.755 0 011.51-.01v.93z">
+                                            </path>
+                                            <path
+                                                d="M18.54 4.17l-5.5-2.06c-.57-.21-1.5-.21-2.07 0l-5.5 2.06c-1.06.4-1.92 1.64-1.92 2.77v8.1c0 .81.53 1.88 1.18 2.36l5.5 4.11c.97.73 2.56.73 3.53 0l5.5-4.11c.65-.49 1.18-1.55 1.18-2.36v-8.1c.01-1.13-.85-2.37-1.9-2.77zM12 16.25c-2.62 0-4.75-2.13-4.75-4.75S9.38 6.75 12 6.75s4.75 2.13 4.75 4.75-2.13 4.75-4.75 4.75z">
+                                            </path>
+                                        </svg>
+
+                                        <h3>30 jaar ervaring</h3>
+
+                                    </div>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur.
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </p>
                                 </div>
+
+                                <div class="inhoud">
+                                    <p>Lorem ipsum dolor sit amet consectetur.
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </p>
+                                    <div class="groep">
+                                        <!-- <svg class="w-64 h-64" width="65" height="65" xmlns="http://www.w3.org/2000/svg"
+                                            enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <path d="M0,0h24v24H0V0z" fill="none"></path>
+                                            </g>
+                                            <g>
+                                                <path
+                                                    d="M12,2L4,5v6.09c0,5.05,3.41,9.76,8,10.91c4.59-1.15,8-5.86,8-10.91V5L12,2z M10.94,15.54L7.4,12l1.41-1.41l2.12,2.12 l4.24-4.24l1.41,1.41L10.94,15.54z">
+                                                </path>
+                                            </g>
+                                        </svg> -->
+
+                                        <svg class="w-64 h-64" width="65" height="65" xmlns="http://www.w3.org/2000/svg"
+                                            enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <path d="M0,0h24v24H0V0z" fill="none"></path>
+                                            </g>
+                                            <g>
+                                                <path
+                                                    d="M11.3,2.26l-6,2.25C4.52,4.81,4,5.55,4,6.39v4.71c0,5.05,3.41,9.76,8,10.91c4.59-1.15,8-5.86,8-10.91V6.39 c0-0.83-0.52-1.58-1.3-1.87l-6-2.25C12.25,2.09,11.75,2.09,11.3,2.26z M10.23,14.83l-2.12-2.12c-0.39-0.39-0.39-1.02,0-1.41l0,0 c0.39-0.39,1.02-0.39,1.41,0l1.41,1.41l3.54-3.54c0.39-0.39,1.02-0.39,1.41,0l0,0c0.39,0.39,0.39,1.02,0,1.41l-4.24,4.24 C11.26,15.22,10.62,15.22,10.23,14.83z">
+                                                </path>
+                                            </g>
+                                        </svg>
+
+                                        <h3>Kwaliteiten</h3>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="inhoud">
+
+                                    <div class="groep">
+                                        <svg class="w-64 h-64" width="65" height="65" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 36 36"
+                                            preserveAspectRatio="xMidYMid meet" fill="currentColor">
+
+                                            <path
+                                                d="M8,19V11H5a3,3,0,0,0-3,3V32a1,1,0,0,0,.56.89,1,1,0,0,0,1-.1L8.71,29H22.15A2.77,2.77,0,0,0,25,26.13V25H14A6,6,0,0,1,8,19Z"
+                                                class="clr-i-solid clr-i-solid-path-1"></path>
+                                            <path
+                                                d="M31,4H14a3,3,0,0,0-3,3V19a3,3,0,0,0,3,3H27.55l4.78,3.71a1,1,0,0,0,1,.11,1,1,0,0,0,.57-.9V7A3,3,0,0,0,31,4Z"
+                                                class="clr-i-solid clr-i-solid-path-2"></path>
+                                        </svg>
+                                        <h3>Persoonlijk advies</h3>
+
+                                    </div>
+
                                     <p>Lorem ipsum dolor sit amet consectetur.
                                         Lorem ipsum dolor sit amet consectetur.
                                     </p>
 
-                            </div>
-                       
-                            <div class="inhoud">
-                                <p>Lorem ipsum dolor sit amet consectetur.
-                                    Lorem ipsum dolor sit amet consectetur.
-                                </p>
-                                <div class="groep">
-                                    <img src="images/kwaliteit.png" alt="kwaliteit">
-                                    <h3>Lorem ipsum dolor</h3>
                                 </div>
-                                   
 
                             </div>
-                 
-                            <div class="inhoud">
 
-                                <div class="groep">
-                                    <img src="images/advies.png" alt="advies">
-                                    <h3>Lorem ipsum dolor</h3>
 
-                                </div>
-                                
-                                <p>Lorem ipsum dolor sit amet consectetur.
-                                    Lorem ipsum dolor sit amet consectetur.
-                                </p>
 
-                            </div>
+
+
+
+
 
                         </div>
+                    </fieldset>
 
-                    </div>
+
+
+
+
                 </div>
+
+
+
             </section>
-            
-  
+
+
 
             <section id="diensten" class="container-diensten">
                 <div class="dienst-wrapper">
-                        <div class="diensten">
-                            <h5>Onze diensten</h5>
-                            
-                            <div class="diensten-box">
-                                
-                                <div class="diensten-wrapper">
-                                    <div class="diensten-container">
-                                        <img src="images/service1.jpg" alt="">
-                                        <h3>Lorem ipsum dolor</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
-                                            consectetur.</p>
-                                    </div>
-                                </div>
+                    <div class="diensten">
+                        <h5>Onze diensten</h5>
 
-                                <div class="diensten-wrapper">
-                                    <div class="diensten-container">
-                                        <img src="images/service2.jpg" alt="">
-                                        <h3>Lorem ipsum dolor</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
-                                            consectetur.</p>
-                                    </div>
-                                </div>
+                        <div class="diensten-box">
 
-                                <div class="diensten-wrapper">
-                                    <div class="diensten-container">
-                                        <img src="images/service3.jpg" alt="">
-                                        <h3>Lorem ipsum dolor</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
-                                            consectetur.</p>
-                                    </div>
+                            <div class="diensten-wrapper">
+                                <div class="diensten-container">
+                                    <img src="images/service1.jpg" alt="">
+                                    <h3>Lorem ipsum dolor</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
+                                        consectetur.</p>
+                                </div>
+                            </div>
+
+                            <div class="diensten-wrapper">
+                                <div class="diensten-container">
+                                    <img src="images/service2.jpg" alt="">
+                                    <h3>Lorem ipsum dolor</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
+                                        consectetur.</p>
+                                </div>
+                            </div>
+
+                            <div class="diensten-wrapper">
+                                <div class="diensten-container">
+                                    <img src="images/service3.jpg" alt="">
+                                    <h3>Lorem ipsum dolor</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
+                                        consectetur.</p>
                                 </div>
                             </div>
                         </div>
-                    </div> 
-            </section> 
+                    </div>
+                </div>
+            </section>
 
             <section class="parallax"></section>
 
@@ -188,8 +265,8 @@
                 <div class="side-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                         <path fill="#EFEFEF" fill-opacity="1" d="M0,64L1440,224L1440,0L0,0Z"></path>
-                      </svg>
-                    
+                    </svg>
+
                     <div class="wrapper">
                         <div class="sideText">
                             <h5> Lorem ipsum</h5>
@@ -220,10 +297,10 @@
 
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                         <path fill="#EFEFEF" fill-opacity="1" d="M0,224L1440,96L1440,320L0,320Z"></path>
-                      </svg>
+                    </svg>
 
                 </div>
-            </section> 
+            </section>
 
             <section id="carousel" class="carousel-container">
                 <div class="carousel owl-carousel">
@@ -243,29 +320,31 @@
                         <img src="images/service2.jpg" alt="vrouw">
                     </div>
                 </div>
-        </section>
+            </section>
 
- 
+
             <section class="parallax">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path fill="#EFEFEF" fill-opacity="1" d="M0,64L1440,224L1440,0L0,0Z"></path>
-                  </svg> 
+                </svg>
             </section>
 
-            
+
             <section class="contact-container">
                 <div id="contact" class="svg-wrapper">
-                
+
                     <div class="container-max">
                         <div class="contact-us">
-                        
-                            <h2 >Neem contact</h2>
+
+                            <h2>Neem contact</h2>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing
+                                Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit, amet consectetur
+                                adipisicing
                                 elit.
-                                Veritatis quis et cupiditate quas aperiam qui ab alias nulla, molestiae temporibus ratione
+                                Veritatis quis et cupiditate quas aperiam qui ab alias nulla, molestiae temporibus
+                                ratione
                             </p>
-                     
+
 
                             <div class="column2">
                                 <form action="action_page.php">
@@ -284,7 +363,7 @@
                                 <div id="map"></div>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
             </section>
 
@@ -296,7 +375,7 @@
         <div id="footer" class="footer-container">
             <div class="footer-wrapper">
                 <div class="row-footer">
-                    
+
                     <div class="columns-footer">
                         <h3>BeautyFit Zaandam</h3>
                         <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula
@@ -321,26 +400,38 @@
 
                     <div class="footer-social">
                         <a href="#">
-                            <svg class="w-64 h-64" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z" fill="currentColor"></path>
+                            <svg class="w-64 h-64" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z"
+                                    fill="currentColor"></path>
                             </svg>
                         </a>
-                        
+
                         <a href="#">
-                            <svg class="w-64 h-64" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                            <svg class="w-64 h-64" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                </path>
                             </svg>
                         </a>
-                        
+
                         <a href="#">
-                            <svg class="w-64 h-64" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
-                          </svg>
+                            <svg class="w-64 h-64" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                                </path>
+                            </svg>
                         </a>
-                        
+
                         <a href="#">
-                            <svg class="w-64 h-64" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                            <svg class="w-64 h-64" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+                                </path>
                             </svg>
                         </a>
                     </div>
