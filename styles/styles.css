@@ -772,12 +772,12 @@ textarea {
 @media screen and (max-width:460px) {
 
     header nav .side-container {
-        padding: 4em 3em;
+        padding: 6em 3em;
     }
     
     /* side container opmaak */
     header nav {
-        height: 33em;
+        height: 40em;
 
     }
 
