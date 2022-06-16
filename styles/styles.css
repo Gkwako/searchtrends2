@@ -577,6 +577,9 @@ textarea {
 }
 
 .footer-wrapper {
+    display: grid;
+    justify-content: center; 
+
     width: 66.5%;
     margin: auto;
     padding: 3em 0 2em;
@@ -585,7 +588,6 @@ textarea {
 /* opmaak container */
 .footer-container .row-footer {
     display: flex;
-    justify-content: center;
     gap: 7em;
 }
 
@@ -698,7 +700,7 @@ textarea {
         text-align: center;
     }
     .footer-container .copyright {
-        text-align: center;
+        text-align: center;            
     }
     .columns-footer p {
         width: 70%;
@@ -758,8 +760,23 @@ textarea {
         columns: 1;
     }
 
-
-
 }
 
 
+@media screen and (max-width:460px) {
+
+    header nav .side-container {
+        padding: 4em 3em;
+    }
+    
+    /* side container opmaak */
+    header nav {
+        height: 34em;
+
+    }
+
+    nav ul :after {
+        left: 3em;
+        content: '';
+    }
+}
