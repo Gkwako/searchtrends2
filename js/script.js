@@ -1,29 +1,28 @@
 // HAMBURGER MENU -----
 console.log(" hamburger menu ");
 
-var menu = document.querySelector(".menu");
-var menuItems = document.querySelectorAll(".menuItem");
-var hamburger = document.querySelector(".ham");
 
-let open = 0;
+//Get the button:
+mybutton = document.getElementById("scrollDown");
 
-function toggleMenu() {
-	if (open == 0) {
-		open = 1;
-		document.getElementById("menu").style.display = "none";
-		hamburger.classList.remove('active');
-		console.log(" close ");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-	} else {
-		open = 0;
-		document.getElementById("menu").style.display = "unset";
-		hamburger.classList.add('active');
-		console.log(" open ");
-	}
+function scrollFunction() {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
-if (hamburger) {
-	hamburger.addEventListener("click", toggleMenu);
-}
+
+
+
+// a IN HAMBURGER MENU TOGGLE IN PAGINA -----
+$( '.menu-2 a' ).on("click", function(){
+	$('.menu').click();
+	console.log(" menu gone");
+});
 
 
 
@@ -66,3 +65,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.marker([52.473290, 4.827750]).addTo(map)
 	.bindPopup('P. Jonker Electrotechniek')
 	.openPopup();
+
+
+
+
+

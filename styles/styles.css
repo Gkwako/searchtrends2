@@ -37,10 +37,6 @@
     top: 1em;
 }
 
-
-
-
-
 /* grote tekst phone/mail */
 .container-extra ul{
     display: flex;
@@ -48,7 +44,6 @@
     align-items: baseline;   
     gap: 1em;
 }
-
 
 /* grote tekst phone/mail */
 .container-extra ul li a span {
@@ -64,6 +59,137 @@
 }
 
 
+
+
+
+/* ************************************************** */
+/* **************************** OPMAAK HAMBURGER MENU */
+/* ************************************************** */
+
+/* zichtbaarheid van ham */
+label{
+    top: 0;
+}
+
+label .menu {
+    position: absolute;
+    left: -2em;
+    top: 1em;
+    
+    /* z-index: 100; */
+    
+    width: 5em;
+    height: 4.5em;
+    
+    background: #fff;
+    border-radius: 50% 5% 5% 50%;
+   
+    transition: .5s ease-in-out;
+    
+    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+    cursor: pointer;
+}
+  
+/* input button position */
+label input{
+    position: absolute;
+    top: 44.5em;
+    z-index: 2;
+
+    visibility: hidden;
+}
+
+label .hamburger {
+    position: absolute;
+    top: 2.3em;
+    left: 1.8em;
+    width: 1.5em;
+    height: .1em;
+    background: #638c87;
+}
+  
+/* strepen van ham */
+label .hamburger:after, label .hamburger:before {
+    content: "";
+    position: absolute;
+    
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #638c87;
+    transition: .5s ease-in-out;
+}
+  
+/* ruimte tussen strepen van ham */
+label .hamburger:before { 
+      top: -8px; }
+label .hamburger:after { 
+      bottom: -8px; }
+ 
+/* display van input button  */
+label input { 
+    display: none; }
+  
+/* menu layout */
+label input:checked + .menu {
+    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+    border-radius: 0;
+}
+
+/* animatie menu open gaat*/
+label input:checked + .menu .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  
+/* full screen*/
+label input:checked + .menu .hamburger:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;    
+}
+label input:checked + .menu .hamburger:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;  
+}
+
+/* inhoud zichtbaar in menu */
+label input:checked + .menu + ul { 
+    opacity: 1; 
+}
+  
+label ul {
+    z-index: 200;
+    position: absolute;
+    top: 45%;
+    left: -17em;
+    opacity: 0;
+   
+    transition: .5s 0s ease-in-out;
+}
+  
+label a {
+    margin-bottom: 1em;
+    display: block;
+    color: #638c87;
+    text-decoration: none;    
+}
+
+label li {
+    font-family: var(--h2-fontfamily);
+    list-style: none;
+  }
+  
+#scrollDown{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+
+    display: none;
+    cursor: pointer;
+    z-index: 10;
+}
 
 
 
@@ -475,7 +601,8 @@ header ul li a svg{
 
 /* padding in container*/
 .side-wrapper .wrapper {
-    width: 50.5%;
+    /* width: 50.5%; */
+    width: 66.5%;
     margin: auto;
     max-width: 1170px;
 }
@@ -897,6 +1024,11 @@ textarea {
         content: '';
     }
 
+    
+
+    /* #scrollDown{
+        display: block;
+    } */
 
 
     /* over ons _________________________________ */
