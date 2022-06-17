@@ -28,6 +28,62 @@
 
 
 /* ************************************************** */
+/* ************************** OPMAAK VAN EXTRA HEADER */
+/* ************************************************** */
+
+/* container hele extra header*/
+.extra-header {
+    position: relative;
+    top: 1em;
+
+    width: 100%;
+    /* z-index: 1; */
+}
+
+
+.contact-phone span{
+    /* position: relative; */
+    /* bottom: 0.4em; */
+    /* justify-content: center; */
+    /* background-color: rgba(86, 182, 137, 0.433); */
+}
+
+
+
+
+/* grote tekst phone/mail */
+.container-extra ul{
+    align-items: baseline;
+    
+    gap: 2em;
+    background-color: #97a5a86e;
+}
+
+
+/* grote tekst phone/mail */
+.container-extra ul li a span {
+    position: relative;
+    bottom: .4em;
+    
+    font-size: .75rem;
+    color: #638c87;
+}
+
+
+
+/* .container-extra .contact-phone{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+
+
+
+
+/* ************************************************** */
 /* ************************************ HEADER OPMAAK */
 /* ************************************************** */
 
@@ -57,7 +113,8 @@ header {
 
 /* nav container opmaak */
 header nav .side-container {
-    padding: 5em;
+    /* padding: 5em; */
+    padding: 4em 5em;
 }
 
 /* logo opmaak in header*/
@@ -143,7 +200,7 @@ nav ol li a:after {
 /* stroke tussen nav en socials: stijling onder navigatie */
 nav ul :after {
     position: absolute;
-    bottom: 5em; /* ruimte tussen stroke en tekst */
+    bottom: 4.5em; /* ruimte tussen stroke en tekst */
     left: 5em;
     right: 0;
    
@@ -155,12 +212,13 @@ nav ul :after {
     width: 20em;
 }
 
-header ul {
+header ul{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
 
     position: relative;
-    top: -1em;
+    /* top: -1em; */
 }
 
 
@@ -168,6 +226,7 @@ header ul {
 header ul a {
     margin-left: .5em;
     width: 20%;
+    text-decoration: none;
 }
 
 /* icon grote */
@@ -176,8 +235,9 @@ header ul li {
 }
 
 /* icon grote */
-header ul li a img{
+header ul li a svg{
     width: 1.3em;
+    color: rgba(0, 0, 0, 0.802);
 }
 
 
