@@ -41,22 +41,18 @@
 }
 
 
-.contact-phone span{
-    /* position: relative; */
-    /* bottom: 0.4em; */
-    /* justify-content: center; */
-    /* background-color: rgba(86, 182, 137, 0.433); */
-}
-
 
 
 
 /* grote tekst phone/mail */
-.container-extra ul{
+.container-extra > ul:nth-of-type(1){
+    display: flex;
+
     align-items: baseline;
     
     gap: 2em;
-    background-color: #97a5a86e;
+    /* background-color: #97a5a86e; */
+    background-color: #a897a56e;
 }
 
 
@@ -214,7 +210,7 @@ nav ul :after {
 
 header ul{
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
 
     position: relative;
