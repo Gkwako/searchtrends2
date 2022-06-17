@@ -515,11 +515,16 @@ header ul li a svg{
 
 /* container diensten */
 .container-diensten {
-    background: #EFEFEF;
+    /* background: #EFEFEF; */
+    background-image: url(../images/bb.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .diensten {    
-    width: 58.5%;
+    width: 64.5%;
     padding: 10em 0 10em;
 
     margin: auto;
@@ -638,6 +643,20 @@ header ul li a svg{
 /* ************************************************** */
 /* ******************************* OPMAAK " CAROUSEL" */
 /* ************************************************** */
+
+.carousel-container h5{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: .5em;
+    font-family: var(--h1-fontfamily);
+}
+
+.carousel-container h4{
+    text-align: center;
+    padding-top: .5em;
+    color: #638c87;
+    font-family: var(--h1-fontfamily);
+}
 
 /* comtainer opmaak */
 .carousel-container {
