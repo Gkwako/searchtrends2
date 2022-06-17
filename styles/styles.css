@@ -1024,12 +1024,6 @@ textarea {
         content: '';
     }
 
-    
-
-    /* #scrollDown{
-        display: block;
-    } */
-
 
     /* over ons _________________________________ */
     .over-ons {
@@ -1061,6 +1055,7 @@ textarea {
 
     /* diensten _________________________________ */
     .diensten {
+        width: 66%;
         padding: 7em 0 5em;
     }
 
