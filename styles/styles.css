@@ -32,12 +32,9 @@
 /* ************************************************** */
 
 /* container hele extra header*/
-.extra-header {
+.container-extra {
     position: relative;
     top: 1em;
-
-    width: 100%;
-    /* z-index: 1; */
 }
 
 
@@ -45,14 +42,11 @@
 
 
 /* grote tekst phone/mail */
-.container-extra > ul:nth-of-type(1){
+.container-extra ul{
     display: flex;
-
-    align-items: baseline;
-    
-    gap: 2em;
-    /* background-color: #97a5a86e; */
-    background-color: #a897a56e;
+    justify-content: center;
+    align-items: baseline;   
+    gap: 1em;
 }
 
 
@@ -62,16 +56,12 @@
     bottom: .4em;
     
     font-size: .75rem;
-    color: #638c87;
+    color: #3b5754;
 }
 
-
-
-/* .container-extra .contact-phone{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-} */
+.container-extra ul li a svg {
+    color: #3b5754;
+}
 
 
 
@@ -109,18 +99,19 @@ header {
 
 /* nav container opmaak */
 header nav .side-container {
-    /* padding: 5em; */
+
     padding: 4em 5em;
+ 
 }
 
 /* logo opmaak in header*/
 header nav h1 {
     font-family: var(--h1-fontfamily);
     font-weight: 400;
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     margin-bottom: .3em;
     
-    width: 50%;
+
 }
 
 /* tussen tekst opmaak in header*/
@@ -205,7 +196,7 @@ nav ul :after {
     color: transparent;
     background: rgb(99, 140, 135);
 
-    width: 20em;
+    width: 70%;
 }
 
 header ul{
@@ -890,7 +881,10 @@ textarea {
 
     /* header _________________________________ */
     header nav .side-container {
-        padding: 7em 3em;
+        /* padding: 4em 4em; */
+        padding: 5em 0em;
+        margin-left: 2.5em;
+        margin-right: 2.5em;
     }
     /* side container opmaak */
     header nav {
