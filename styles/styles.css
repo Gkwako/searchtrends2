@@ -218,7 +218,7 @@ header {
 
  /* side container opmaak */
  header nav {
-    min-height: 36em;
+    min-height: 35em;
     background-color: rgb(255 255 255 / 65%);
     width: 30em;
     padding-bottom: 2em;
