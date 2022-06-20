@@ -218,9 +218,10 @@ header {
 
  /* side container opmaak */
  header nav {
-    height: 35em;
+    /* height: 35em; */
     background-color: rgb(255 255 255 / 65%);
     width: 30em;
+    padding-bottom: 2em;
 }
 
 /* nav container opmaak */
@@ -1029,14 +1030,10 @@ textarea {
     header nav .side-container {
         /* padding: 4em 4em; */
         padding: 5em 0em;
-        margin-left: 2.5em;
+        margin-left: 3em;
         margin-right: 2.5em;
     }
-    /* side container opmaak */
-    header nav {
-        height: 40em;
 
-    }
     nav ul :after {
         bottom: 4em;
         left: 3em;
