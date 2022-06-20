@@ -218,7 +218,7 @@ header {
 
  /* side container opmaak */
  header nav {
-    /* height: 35em; */
+    min-height: 36em;
     background-color: rgb(255 255 255 / 65%);
     width: 30em;
     padding-bottom: 2em;
@@ -226,9 +226,7 @@ header {
 
 /* nav container opmaak */
 header nav .side-container {
-
     padding: 4em 5em;
- 
 }
 
 /* logo opmaak in header*/
@@ -1032,6 +1030,12 @@ textarea {
         padding: 5em 0em;
         margin-left: 3em;
         margin-right: 2.5em;
+    }
+
+     /* side container opmaak */
+     header nav {
+        min-height: 40em;
+
     }
 
     nav ul :after {
