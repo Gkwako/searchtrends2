@@ -174,7 +174,8 @@ label a {
     margin-bottom: 1em;
     display: block;
     color: #638c87;
-    text-decoration: none;    
+    text-decoration: none;  
+    font-size: 1.1rem;  
 }
 
 label li {
