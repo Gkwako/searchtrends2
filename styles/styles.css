@@ -4,8 +4,9 @@
     /* box-sizing: inherit; */
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
+
+
 
 
 /* ************************************************** */
@@ -193,12 +194,6 @@ label li {
     z-index: 10;
 }
 
-/* geen scroll in menu (hamburger menu) */
-.menu-2{
-    overflow-y: hidden;
-    overflow-x: auto;
-    height: 100%;
-}
 
 
 
