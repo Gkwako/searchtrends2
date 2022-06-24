@@ -88,6 +88,7 @@ label .menu {
     
     box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
     cursor: pointer;
+    
 }
   
 /* input button position */
@@ -191,7 +192,11 @@ label li {
     z-index: 10;
 }
 
-
+/* geen scroll in menu (hamburger menu) */
+.menu-2{
+    overflow-y: hidden;
+    height: 100%;
+}
 
 
 
