@@ -196,6 +196,7 @@ label li {
 /* geen scroll in menu (hamburger menu) */
 .menu-2{
     overflow-y: hidden;
+    overflow-x: auto;
     height: 100%;
 }
 
