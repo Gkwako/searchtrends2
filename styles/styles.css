@@ -75,7 +75,7 @@ label{
 
 label .menu {
     position: absolute;
-    left: -2em;
+    left: -1.2em;
     top: 1em;
     
     /* z-index: 100; */
@@ -105,7 +105,7 @@ label input{
 label .hamburger {
     position: absolute;
     top: 2.3em;
-    left: 1.8em;
+    left: 1.5em;
     width: 1.5em;
     height: .1em;
     background: #638c87;
@@ -443,7 +443,19 @@ header ul li a svg{
 }
 
 
+/* observer */
+.over-ons h2, .over-ons h5, .over-ons p{
+    opacity: 0;
+    position: relative;
+    bottom: -40px;
+    transition: all 0.9s ease-out;
+}
 
+.over-ons h2.show, .over-ons h5.show, p.show{
+    opacity: 1;
+    bottom: 0;
+ 
+}
 
 
 /* ************************************************** */
@@ -554,6 +566,7 @@ header ul li a svg{
 .diensten-container {
     background-color:white;
     box-shadow: -16px 16px 20px 6px #00000045;
+    height: 100%;
 }
 
 /* h3 opmaak */
@@ -648,13 +661,14 @@ header ul li a svg{
 
 .carousel-container h5{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: .5em;
     font-family: var(--h1-fontfamily);
 }
 
 .carousel-container h4{
     text-align: center;
+    font-size: 1.5rem;
     padding-bottom: 2em;
     color: #638c87;
     font-family: var(--h1-fontfamily);
@@ -719,7 +733,7 @@ header ul li a svg{
     font-family: var(--h2-fontfamily);
     line-height: 1.8em;
     padding-bottom: 2em;
-    
+    text-align: justify;
     width: 100%;
 }
 

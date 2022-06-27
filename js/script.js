@@ -69,4 +69,36 @@ L.marker([52.473290, 4.827750]).addTo(map)
 
 
 
+// TEXT APPEAR ON SCROLL-----
+// console.log("text appear");
 
+window.addEventListener('DOMContentLoaded', setup);
+
+function setup(){
+	const options = {
+		rootMargin: '0px 0px -200px 0px'
+	}
+
+	const observer = new IntersectionObserver((entries,
+	observer) => {
+		entries.forEach(entry => {
+			if(entry.isIntersecting) {
+				// entry.target.style.opacity = "1";
+				entry.target.classList.add('show');
+				observer.unobserve(entry.target);
+				console.log("text appear");
+			} else {
+				return;
+			}
+		})
+	}, options)
+
+	const h2 = document.querySelector('.over-ons h2');
+	observer.observe(h2);
+
+	const h5 = document.querySelector('.over-ons h5');
+	observer.observe(h5);
+
+	const paras =document.querySelectorAll('.over-ons p');
+	paras.forEach(p => observer.observe(p));
+}
