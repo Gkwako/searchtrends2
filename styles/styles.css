@@ -51,7 +51,6 @@
 .container-extra ul li a span {
     position: relative;
     bottom: .4em;
-    
     font-size: .75rem;
     color: #3b5754;
 }
@@ -75,22 +74,16 @@ label{
 
 label .menu {
     position: absolute;
-    left: -1.2em;
-    top: 1em;
-    
-    /* z-index: 100; */
-    
-    width: 5em;
-    height: 4.5em;
-    
-    background: #fff;
-    border-radius: 50% 5% 5% 50%;
-   
+    top: 0;
+    right: 0em;
+    z-index: 100;
+    width: 6em;
+    height: 4.8em;
+    border-radius: 0%;
     transition: .5s ease-in-out;
-    
-    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -16px 16px 20px 6px #00000045;
     cursor: pointer;
-    
 }
   
 /* input button position */
@@ -98,16 +91,15 @@ label input{
     position: absolute;
     top: 44.5em;
     z-index: 2;
-
     visibility: hidden;
 }
 
 label .hamburger {
     position: absolute;
     top: 2.3em;
-    left: 1.5em;
-    width: 1.5em;
-    height: .1em;
+    left: 1.99em;
+    width: 2em;
+    height: 0.15em;
     background: #638c87;
 }
   
@@ -125,13 +117,17 @@ label .hamburger:after, label .hamburger:before {
   
 /* ruimte tussen strepen van ham */
 label .hamburger:before { 
-      top: -8px; }
+    top: -10px; 
+}
 label .hamburger:after { 
-      bottom: -8px; }
- 
+    bottom: -10px; 
+}
+
+
 /* display van input button  */
 label input { 
-    display: none; }
+    display: none; 
+}
   
 /* menu layout */
 label input:checked + .menu {
@@ -168,7 +164,6 @@ label ul {
     top: 45%;
     left: -17em;
     opacity: 0;
-   
     transition: .5s 0s ease-in-out;
 }
   
@@ -183,7 +178,7 @@ label a {
 label li {
     font-family: var(--h2-fontfamily);
     list-style: none;
-  }
+}
   
 #scrollDown{
     position: fixed;
@@ -207,8 +202,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: row-reverse; */
-
     background-image: 
     linear-gradient( rgba(0, 0, 0, 0.5), 
     rgba(0, 0, 0, 0.5) ), 
@@ -219,8 +212,8 @@ header {
     background-size: cover;
 }
 
- /* side container opmaak */
- header nav {
+/* side container opmaak */
+header nav {
     min-height: 35em;
     background-color: rgb(255 255 255 / 65%);
     width: 30em;
@@ -238,8 +231,6 @@ header nav h1 {
     font-weight: 400;
     font-size: 1.9rem;
     margin-bottom: .3em;
-    
-
 }
 
 /* tussen tekst opmaak in header*/
@@ -311,7 +302,6 @@ nav ol li a:after {
 
 
 
-
 /* stroke tussen nav en socials: stijling onder navigatie */
 nav ul :after {
     position: absolute;
@@ -333,7 +323,6 @@ header ul{
     align-items: center;
 
     position: relative;
-    /* top: -1em; */
 }
 
 
@@ -454,7 +443,6 @@ header ul li a svg{
 .over-ons h2.show, .over-ons h5.show, p.show{
     opacity: 1;
     bottom: 0;
- 
 }
 
 
@@ -529,7 +517,6 @@ header ul li a svg{
 
 /* container diensten */
 .container-diensten {
-    /* background: #EFEFEF; */
     background-image: url(../images/bb.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -621,7 +608,6 @@ header ul li a svg{
 
 /* padding in container*/
 .side-wrapper .wrapper {
-    /* width: 50.5%; */
     width: 64.5%;
     margin: auto;
     max-width: 1170px;
@@ -710,7 +696,6 @@ header ul li a svg{
 
     padding: 10em 0 10em;
     max-width: 1170px;
-
 }
 
 .contact-us {
@@ -889,6 +874,45 @@ textarea {
 /* ************************************* MEDIA */
 
 @media screen and (max-width:1300px) {
+
+    /* Hamburger menu _________________________________ */
+    label .menu {
+    position: absolute;
+    left: -1.2em;
+    top: 1em;
+    
+    width: 5em;
+    height: 4.5em;
+    
+    background: #fff;
+    border-radius: 50% 5% 5% 50%;
+   
+    transition: .5s ease-in-out;
+    
+    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+    box-shadow: -16px 16px 20px 6px #00000045;
+
+    cursor: pointer;
+    }
+
+    label .hamburger {
+        position: absolute;
+        top: 2.3em;
+        left: 1.5em;
+        width: 1.5em;
+        height: .15em;
+        background: #638c87;
+    }
+
+    /* ruimte tussen strepen van ham */
+    label .hamburger:before { 
+        top: -8px;
+    }
+    label .hamburger:after { 
+        bottom: -8px;
+    }
+
+
 
     /* carousel _________________________________ */
     .carousel .card {

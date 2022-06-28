@@ -9,13 +9,12 @@ mybutton = document.getElementById("scrollDown");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+  if (document.body.scrollTop > 558 || document.documentElement.scrollTop > 558) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
   }
 }
-
 
 
 // a IN HAMBURGER MENU TOGGLE IN PAGINA -----
